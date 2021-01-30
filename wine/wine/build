@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+export PKG_CONFIG_PATH="/usr/lib/pkgconfig"
+
+./configure \
+    --prefix=/usr \
+    --libdir=/usr/lib \
+    --with-x \
+    --enable-win64
+
+make
+make prefix="$1/usr" \
+    libdir="$1/usr/lib" \
+    dlldir="$1/usr/lib/wine" install
