@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-sed -i "s/libexec/bin/g" Makefile
-
-make PREFIX=/usr
-make DESTDIR="$1" install
