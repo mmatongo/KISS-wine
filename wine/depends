@@ -1,0 +1,7 @@
+alsa-lib
+eudev
+gcc
+libX11
+libXext
+libusb
+libxml2
