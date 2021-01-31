@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cmake -B build \
+    -GNinja \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DBUILD_SHARED_LIBS=True \
+    -DCMAKE_BUILD_TYPE=None \
+    -DSPIRV_WERROR=OFF \
+    -DSPIRV_SKIP_TESTS=ON \
+    -DBUILD_SHARED_LIBS=ON \
+    -DSPIRV-Headers_SOURCE_DIR=/usr
+
+ninja -C build
+ninja -C build install

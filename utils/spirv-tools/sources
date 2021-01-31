@@ -1,0 +1,3 @@
+#git+https://github.com/KhronosGroup/SPIRV-Tools#895927bd3f2d653f40cebab55aa6c7eabde30a86 spirv-tools
+https://github.com/KhronosGroup/SPIRV-Tools/archive/v2020.3.tar.gz
+#git+https://github.com/KhronosGroup/SPIRV-Headers#c0df742ec0b8178ad58c68cff3437ad4b6a06e26 SPIRV-Headers
